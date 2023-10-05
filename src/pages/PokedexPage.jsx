@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import useFetch from "../hooks/UseFetch";
+import useFetch from "../hooks/useFetch";
 import { useEffect, useRef, useState } from "react";
 import PokeCard from "../components/PokedexPage/PokeCard";
 import SelectType from "../components/PokedexPage/SelectType";
