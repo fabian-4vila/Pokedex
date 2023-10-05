@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom";
-
 import { useEffect } from "react";
 import "./pokedexidPages.css";
 import useFetch from "../hooks/useFetch";
