@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import useFetch from "../../hooks/UseFetch";
+import useFetch from "../../hooks/useFetch";
+
 
 const SelectType = ({ setTypeSelected }) => {
   const url = "https://pokeapi.co/api/v2/type";

@@ -1,7 +1,8 @@
 import { useParams } from "react-router-dom";
-import useFetch from "../hooks/UseFetch";
+
 import { useEffect } from "react";
 import "./pokedexidPages.css";
+import useFetch from "../hooks/useFetch";
 
 const PokedexIdPages = () => {
   const { id } = useParams();
