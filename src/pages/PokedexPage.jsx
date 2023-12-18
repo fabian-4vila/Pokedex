@@ -11,7 +11,7 @@ const PokedexPage = () => {
   const [pokemonPerPage, setPokemonPerPage] = useState(10);
   const trainer = useSelector((store) => store.trainer);
   const inputSearch = useRef();
-  const url = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=150`;
+  const url = `https://pokeapi.co/api/v2/pokemon?offset=0&limit=1292`;
   const [pokemons, getPokemons, getTypePokemon] = useFetch(url);
   useEffect(() => {
     if (typeSelected === "allPokemons") {
