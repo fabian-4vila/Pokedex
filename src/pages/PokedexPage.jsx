@@ -104,12 +104,22 @@ const PokedexPage = () => {
     </div>
     <footer className="pokedex__footer">
     <div>
-      <Pagination
+        {pokeFiltered && pokeFiltered.length > 0 && cardsPerPage > 0 ? (
+          <Pagination
             cardsPerPage={cardsPerPage}
             totalCards={pokeFiltered.length}
             paginate={paginate}
             currentPage={currentPage}
           />
+        ) : (
+          <p className="pokedex__error">
+           {hasError
+             ? "The number of cards per page must be a valid value greater than 0"
+             : "No items to display"
+           }
+          </p>
+        )
+        }
       </div>
     </footer>
     </div>
