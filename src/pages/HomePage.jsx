@@ -21,7 +21,7 @@ const HomePage = () => {
     <article className="pokedex">
       <header className="pokedex__title1">
       <img
-        className="pokedex__title"
+        className="pokedex__title_image"
         src="/images/TitleHome.png"
         alt="pokedex title"
       />

@@ -26,8 +26,11 @@ const PokedexIdPages = () => {
   return (
     <article className="pokemon-card">
       <div className="pokemon-card__header-images">
-      <img className="pokemon-card__header-image" src="/images/header.png" alt="" />
-      <img className="pokemon-card__header-image1" src="images/titleCard.png" alt="" />
+      <img className="pokedex__img" src="/images/rectangulo.red.png" alt="imagen-header" />
+      <img className="pokedex__img2" src="/images/rectangulo.black.png" alt="imagen-header" />
+      <img className="pokedex__img3" src="/images/circulo1.png" alt="imagen-header" />
+      <img className="pokedex__img4" src="/images/circulo2.png" alt="imagen-header" />
+      <img className="pokedex__img" src="/images/titleCard.png" alt="imagen-header" />
     </div>
   <header className="pokemon-card__header">
     <div className={`pokemon-card__header1 ${firstType}-gradient`}>
