@@ -7,9 +7,6 @@ import useFetch from "../hooks/useFetch"
 import "./PokedexPage.css";
 
 
-
-
-
 const PokedexPage = () => {
 
   const [inputValue, setInputValue] = useState('')
@@ -78,7 +75,7 @@ const PokedexPage = () => {
     </header>
     <div className="pokedex__body">
       <p className="pokedex__title3"> <span>Wellcome trainer {trainer}</span>, here you can find your favorite Pokémon</p>
-      <form className="pokedex__form" onSubmit={handleSearch}>
+      <form className="pokedex__form1" onSubmit={handleSearch}>
         <input className="pokedex__input2" ref={inputSearch} type="text" />
         <button className="pokedex__button2">Search</button>
       </form>
@@ -90,9 +87,9 @@ const PokedexPage = () => {
         value={cardsPerPage}
         onChange={handleCardsPerPageChange}
       >
-      <option value={10}>{10}</option>
-      <option value={20}>{20}</option>
-      <option value={30}>{30}</option>
+      <option value={10}>10</option>
+      <option value={20}>20</option>
+      <option value={30}>30</option>
     </select>
       </div>
       {isLoading && <p className="pokedex__loading">Loading...</p>}
