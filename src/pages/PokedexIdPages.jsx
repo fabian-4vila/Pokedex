@@ -74,6 +74,8 @@ const PokedexIdPages = () => {
                 <span className="title-poke-span">Peso </span> <span className="poke-span-contain">{pokemon?.weight}</span>
               </li>
             </ul>
+            <div className="poke-card__type_abilities">
+            <div className="container-poke-list">
             <h3 className="poke-card__types-title">Type</h3>
             <ul className="poke-card__types">
               {pokemon?.types.map((typeInfo) => (
@@ -82,6 +84,8 @@ const PokedexIdPages = () => {
                 </li>
               ))}
             </ul>
+            </div>
+            <div className="container-poke-list">
             <h3 className="poke-card__abilities-title">Abilities</h3>
             <ul className="poke-card__abilities">
               {pokemon?.abilities.map((abilitiesInfo) => (
@@ -93,10 +97,12 @@ const PokedexIdPages = () => {
                 </li>
               ))}
             </ul>
+            </div>
+            </div>
             <ul className="poke-card__stats">
               {pokemon?.stats.map((statInfo) => (
                 <li className="poke-card__stat" key={statInfo.stat.url}>
-                  <span className="poke-card__stat-name">
+                  <span className={`poke-card__stat-name ${firstType}-color1`}>
                     {statInfo.stat.name}
                   </span>
                   <div className="poke-card__stat-bar">
@@ -120,14 +126,17 @@ const PokedexIdPages = () => {
         </div>
       </section>
       <section className="poke-card__moves">
-        <h3 className="poke-card__moves-title">Movements</h3>
+        <div className={`container__movements ${firstType}-border1`}>
+        <h3 className={`poke-card__moves-title ${firstType}-color1`}>Movements</h3>
         <div className="poke-card__move-list">
           {pokemon?.moves.map((moveInfo) => (
-            <span key={moveInfo.move.url} className="poke-card__move">
+            <div key={moveInfo.move.url} className={`poke-card__move ${firstType}-color1`}>
               {moveInfo.move.name}
-            </span>
+            </div>
           ))}
         </div>
+        </div>
+        
       </section>
     </article>
   );
