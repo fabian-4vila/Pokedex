@@ -99,7 +99,7 @@ const PokedexPage = () => {
         ))}
       </div>
     </div>
-    <footer className="pokedex__footer">
+    <footer className="pokedex__footer1">
     <div>
         {pokeFiltered && pokeFiltered.length > 0 && cardsPerPage > 0 ? (
           <Pagination

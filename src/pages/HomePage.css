@@ -74,15 +74,42 @@
 }
 .pokedex__footer{
     display: flex;
-    align-items: end;
+    flex-direction: column;
     width: 100%;
     grid-column: 1/2;
     grid-row: 3/4;
+    position: relative;
 }
-.pokedex__footer>img{
-    height: 40%;
+.imagen__footer__pokedex1{
+    width: 100%;
+    height: 123px;
+    position: absolute;
+    bottom: 68px;
 }
-@media  screen and ( max-width: 1000px)  {
+.imagen__footer__pokedex2{
+    width: 100%;
+    height: 69px;
+    position: absolute;
+    bottom: 0;
+}
+.imagen__footer__pokedex3{
+    width: 117px;
+    z-index: 8;
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translate(-50%)
+}
+.imagen__footer__pokedex4{
+    width: 63px;
+    z-index: 10;
+    position: absolute;
+    bottom: 20px;
+    left: 50%; 
+    transform: translate(-50%)
+}
+
+@media  screen and ( max-width: 800px)  {
     .pokedex{
         grid-template-columns: 1fr;
         grid-template-rows: minmax(200px, 250px) repeat(2, 1fr);
@@ -90,8 +117,36 @@
     .pokedex__input, .pokedex__button{
         height: 40px;
     }
+    .imagen__footer__pokedex1{
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        bottom: 38px;
+    }
+    .imagen__footer__pokedex2{
+        width: 100%;
+        height: 60px;
+        position: absolute;
+        bottom: 0;
+    }
+    .imagen__footer__pokedex3{
+        width: 90px;
+        z-index: 8;
+        position: absolute;
+        bottom: 0; 
+        left: 50%;
+        transform: translate(-50%)
+    }
+    .imagen__footer__pokedex4{
+        width: 50px;
+        z-index: 10;
+        position: absolute;
+        bottom:14px;
+        left: 50%; 
+        transform: translate(-50%)
+    }
 }
-@media  screen and ( max-width: 700px)  {
+@media  screen and ( max-width: 500px)  {
     .pokedex{
         grid-template-columns: 1fr;
         grid-template-rows: minmax(100px, 150px) repeat(2, 1fr);
@@ -132,7 +187,32 @@
         border-bottom-right-radius: 24px;
         border-top-right-radius: 24px;
     }
-    .pokedex__footer>img{
-        height: 30%;
+    .imagen__footer__pokedex1{
+        width: 100%;
+        height: 80px;
+        position: absolute;
+        bottom: 38px;
+    }
+    .imagen__footer__pokedex2{
+        width: 100%;
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+    }
+    .imagen__footer__pokedex3{
+        width: 70px;
+        z-index: 8;
+        position: absolute;
+        bottom: 0; 
+        left: 50%;
+        transform: translate(-50%)
+    }
+    .imagen__footer__pokedex4{
+        width: 40px;
+        z-index: 10;
+        position: absolute;
+        bottom: 11px;
+        left: 50%; 
+        transform: translate(-50%)
     }
 }

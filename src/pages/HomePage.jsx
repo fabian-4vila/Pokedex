@@ -37,11 +37,10 @@ const HomePage = () => {
       </form>
       </div>
       <footer className="pokedex__footer">
-        <img
-          className="pokedex__footer-image"
-          src="/images/footer.png"
-          alt="Pokedex footer"
-        />
+        <img className="imagen__footer__pokedex1" src="./images/RectangleR.png" alt="imagen" />
+        <img className="imagen__footer__pokedex2" src="./images/RectangleB.png" alt="imagen" />
+        <img className="imagen__footer__pokedex3" src="./images/Ellipse1.png" alt="imagen" />
+        <img className="imagen__footer__pokedex4" src="./images/Ellipse2.png" alt="imagen" />
       </footer>
     </article>
   );

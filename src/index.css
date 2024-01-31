@@ -8,9 +8,11 @@ html {
 }
 header{
     margin: 0;
+    padding: 0;
 }
 footer{
     margin: 0;
+    padding: 0;
 }
 body {
     margin: 0;
@@ -22,9 +24,6 @@ h1, h2, h3, h4, p, ul, hr {
 ul {
     padding: 0;
     list-style: none;
-}
-img {
-    width: 100%;
 }
 input {
     font-size: inherit;
