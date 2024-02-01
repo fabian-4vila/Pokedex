@@ -112,7 +112,7 @@ const PokedexPage = () => {
           <p className="pokedex__error">
            {hasError
              ? "The number of cards per page must be a valid value greater than 0"
-             : "No items to display"
+             : "No cards to display"
            }
           </p>
         )

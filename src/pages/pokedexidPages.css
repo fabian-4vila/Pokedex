@@ -1,64 +1,64 @@
 /*into card*/
-.poke-card{
+.poke-card {
   display: grid;
-  grid-template-columns: minmax(350px, 1fr) ;
-  grid-template-rows: 200px  1fr 600px;
+  grid-template-columns: minmax(350px, 1fr);
+  grid-template-rows: 200px 1fr 600px;
   row-gap: 30px;
 }
-.poke-card__header-images{
+.poke-card__header-images {
   display: flex;
   flex-direction: column;
   position: relative;
   grid-column: 1/2;
   grid-row: 1/2;
 }
-.poke-card__img-R{
+.poke-card__img-R {
   width: 100%;
   height: 123px;
   position: absolute;
 }
-.poke-card__img-B{
+.poke-card__img-B {
   width: 100%;
   height: 69px;
   position: absolute;
   top: 120px;
 }
-.poke-card__img-1{
+.poke-card__img-1 {
   width: 120px;
   position: absolute;
   top: 100px;
   right: 80px;
 }
-.poke-card__img-2{
+.poke-card__img-2 {
   width: 69px;
   position: absolute;
   top: 125px;
   right: 105px;
 }
-.poke-card__img-T{
+.poke-card__img-T {
   height: 50%;
   width: 35%;
-  position:absolute;
+  position: absolute;
   top: 25px;
   left: 80px;
 }
 /*card abierta*/
-.poke-card__header-into{
+.poke-card__header-into {
   display: flex;
   grid-column: 1/2;
   grid-row: 2/3;
   justify-content: center;
 }
-.Card-Pokemon-into{
+.Card-Pokemon-into {
   display: grid;
   width: 60%;
-  grid-template-columns:minmax(200px,1fr);
-  grid-template-rows: minmax(400px,500px) 1fr;
+  grid-template-columns: minmax(200px, 1fr);
+  grid-template-rows: minmax(400px, 500px) 1fr;
   border: solid 0.7em #999;
   border-radius: 24px;
   row-gap: 20px;
 }
-.poke-card__header1{
+.poke-card__header1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -67,81 +67,81 @@
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
-.poke-card__official-artwork1{
+.poke-card__official-artwork1 {
   width: 50%;
   filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.8));
 }
-.poke-card__info{
+.poke-card__info {
   display: flex;
   flex-direction: column;
-  grid-column: 1/2 ;
+  grid-column: 1/2;
   grid-row: 2/3;
   align-items: center;
   gap: 20px;
 }
-.poke-card__id{
+.poke-card__id {
   color: black;
   font-size: 3em;
 }
-.poke-card__name{
+.poke-card__name {
   font-size: 3em;
-  text-shadow: 1.2px 1.2px 1.1px rgba(0, 0, 0, 0.5)
+  text-shadow: 1.2px 1.2px 1.1px rgba(0, 0, 0, 0.5);
 }
-.poke-card__details{
+.poke-card__details {
   display: flex;
   gap: 30px;
   font-size: 1.2em;
-  text-shadow: 1.2px 1.2px 1.1px rgba(0, 0, 0, 0.5)
+  text-shadow: 1.2px 1.2px 1.1px rgba(0, 0, 0, 0.5);
 }
-.poke-card__detail{
+.poke-card__detail {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.title-poke-span{
+.title-poke-span {
   font-weight: bold;
   font-size: 1.5em;
 }
-.poke-span-contain{
-color: black;
-font-size: 1.3em;
+.poke-span-contain {
+  color: black;
+  font-size: 1.3em;
 }
-.poke-card__type_abilities{
+.poke-card__type_abilities {
   display: flex;
   width: 80%;
   gap: 10%;
   justify-content: center;
 }
-.container-poke-list{
+.container-poke-list {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.poke-card__types-title{
+.poke-card__types-title {
   font-size: 1.7em;
   text-shadow: 1.2px 1.2px 1.1px rgba(0, 0, 0, 0.5);
   margin-bottom: 4%;
 }
-.poke-card__types{
+.poke-card__types {
   display: flex;
   gap: 30px;
   font-size: 1.4em;
   color: black;
   font-weight: bold;
 }
-.poke-card__abilities-title{
+.poke-card__abilities-title {
   font-size: 1.7em;
   text-shadow: 1.2px 1.2px 1.1px rgba(0, 0, 0, 0.5);
   margin-bottom: 4%;
 }
-.poke-card__abilities{
+.poke-card__abilities {
   display: flex;
   color: black;
   gap: 30px;
   font-size: 1.4em;
   font-weight: bold;
 }
-.poke-card__stats{
+.poke-card__stats {
   display: flex;
   flex-direction: column;
   padding: 40px;
@@ -149,57 +149,56 @@ font-size: 1.3em;
   line-height: 30px;
   gap: 10px;
 }
-.poke-card__stat{
+.poke-card__stat {
   display: flex;
   flex-direction: column;
   width: 100%;
   gap: 10px;
 }
-.poke-card__stat-name{
+.poke-card__stat-name {
   color: black;
   font-size: 1.5em;
   font-weight: bold;
 }
-.poke-card__stat-bar{
+.poke-card__stat-bar {
   display: flex;
   color: black;
   height: 30px;
   width: 100%;
   background-color: rgba(153, 153, 153, 0.5);
-  border-radius:24px;
+  border-radius: 24px;
   border: solid 1px rgba(0, 0, 0, 0.4);
   box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
 }
-.poke-card__stat-fill{
+.poke-card__stat-fill {
   display: flex;
   gap: 10px;
   position: relative;
   height: 28px;
-  
 }
-.container-stats_poke{
+.container-stats_poke {
   display: flex;
   gap: 10px;
   width: 100%;
   position: relative;
 }
-.poke-card__stat-base{
+.poke-card__stat-base {
   position: absolute;
   left: 15px;
   font-weight: bold;
 }
-.poke-card__stat-max{
+.poke-card__stat-max {
   position: absolute;
   right: 10px;
   font-weight: bold;
 }
 /*contenedor movimientos*/
-.poke-card__moves{
+.poke-card__moves {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container__movements{
+.container__movements {
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -208,20 +207,20 @@ font-size: 1.3em;
   padding: 20px;
   gap: 25px;
 }
-.poke-card__moves-title{
+.poke-card__moves-title {
   font-size: 2rem;
   text-align: center;
-  text-shadow: 1.2px 1.2px 1.1px rgba(0, 0, 0, 0.5)
+  text-shadow: 1.2px 1.2px 1.1px rgba(0, 0, 0, 0.5);
 }
-.poke-card__move-list{
+.poke-card__move-list {
   display: grid;
-  grid-template-columns: repeat(18,1fr) ;
+  grid-template-columns: repeat(18, 1fr);
   font-size: 1.3em;
   gap: 10px;
   overflow: hidden;
   overflow-x: scroll;
 }
-.poke-card__move{
+.poke-card__move {
   display: grid;
   width: 150px;
   height: 70px;
@@ -232,158 +231,156 @@ font-size: 1.3em;
   border: solid 1px black;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
-@media screen and (max-width:1200px){
-  .poke-card__img-R{
+@media screen and (max-width: 1200px) {
+  .poke-card__img-R {
     height: 100px;
   }
-  .poke-card__img-B{
+  .poke-card__img-B {
     height: 45px;
     top: 99px;
   }
-  .poke-card__img-1{
+  .poke-card__img-1 {
     width: 80px;
     top: 80px;
     right: 80px;
   }
-  .poke-card__img-2{
+  .poke-card__img-2 {
     width: 45px;
     top: 97px;
     right: 97px;
   }
-  .poke-card__img-T{
+  .poke-card__img-T {
     height: 40%;
     width: 30%;
   }
   /*card abierta*/
-  .poke-card__official-artwork1{
+  .poke-card__official-artwork1 {
     width: 50%;
     filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.8));
   }
-  .Card-Pokemon-into{
+  .Card-Pokemon-into {
     width: 95%;
   }
-  .poke-card__official-artwork{
+  .poke-card__official-artwork {
     width: 75%;
     filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.8));
   }
   /*contenedor movimientos adaptado*/
-  .container__movements{
+  .container__movements {
     width: 95%;
   }
-  .poke-card__move-list{
+  .poke-card__move-list {
     display: grid;
     height: 400px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5,1fr) ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     overflow: hidden;
     overflow-y: scroll;
   }
 }
-@media screen and (max-width:800px){
-  .poke-card__official-artwork1{
+@media screen and (max-width: 800px) {
+  .poke-card__official-artwork1 {
     width: 70%;
     filter: drop-shadow(10px 10px 6px rgba(0, 0, 0, 0.8));
   }
 }
 
-@media screen and (max-width:600px) {
-  .poke-card{
+@media screen and (max-width: 600px) {
+  .poke-card {
     display: grid;
-    grid-template-columns: minmax(350px, 1fr) ;
-    grid-template-rows: 150px  1fr 600px;
+    grid-template-columns: minmax(350px, 1fr);
+    grid-template-rows: 150px 1fr 600px;
     row-gap: 30px;
   }
-  .poke-card{
+  .poke-card {
     row-gap: 10px;
   }
-  .poke-card__img-R{
+  .poke-card__img-R {
     height: 80px;
   }
-  .poke-card__img-B{
+  .poke-card__img-B {
     height: 40px;
     top: 79px;
   }
-  .poke-card__img-1{
+  .poke-card__img-1 {
     width: 65px;
     top: 70px;
     right: 50px;
   }
-  .poke-card__img-2{
+  .poke-card__img-2 {
     width: 35px;
     top: 85px;
     right: 65px;
   }
-  .poke-card__img-T{
+  .poke-card__img-T {
     height: 35%;
     width: 50%;
     top: 29px;
     left: 40px;
   }
   /*card abierta*/
-  .Card-Pokemon-into{
+  .Card-Pokemon-into {
     display: grid;
     width: 90%;
-    grid-template-columns:minmax(300,1fr);
-    grid-template-rows: minmax(150px,250px) 1fr;
+    grid-template-columns: minmax(300, 1fr);
+    grid-template-rows: minmax(150px, 250px) 1fr;
     border: solid 0.7em #999;
     border-radius: 21px;
     row-gap: 20px;
   }
-  .poke-card__official-artwork1{
+  .poke-card__official-artwork1 {
     width: 65%;
   }
-  .poke-card__id{
+  .poke-card__id {
     font-size: 1.6em;
   }
-  .poke-card__name{
+  .poke-card__name {
     font-size: 1.8em;
   }
-  .poke-card__details{
+  .poke-card__details {
     gap: 20px;
     font-size: 0.6em;
   }
-  .title-poke-span{
+  .title-poke-span {
     font-size: 2em;
   }
-  .poke-span-contain{
-  font-size: 1.6em;
+  .poke-span-contain {
+    font-size: 1.6em;
   }
-  .poke-card__type_abilities{
+  .poke-card__type_abilities {
     display: flex;
     width: 100%;
     gap: 10px;
     justify-content: center;
   }
-  .poke-card__types-title{
+  .poke-card__types-title {
     font-size: 1.2em;
     margin-bottom: 4px;
   }
-  .poke-card__types{
+  .poke-card__types {
     gap: 7px;
     font-size: 1em;
   }
-  .poke-card__abilities-title{
+  .poke-card__abilities-title {
     font-size: 1.2em;
     margin-bottom: 4px;
   }
-  .poke-card__abilities{
+  .poke-card__abilities {
     gap: 9px;
     font-size: 1em;
   }
-  .poke-card__stats{
+  .poke-card__stats {
     padding: 20px;
     width: 100%;
     gap: 4px;
   }
-  .poke-card__stat{
+  .poke-card__stat {
     gap: 5px;
   }
-  .poke-card__stat-name{
+  .poke-card__stat-name {
     font-size: 1em;
   }
-
 }
-
 
 /******************************gradien************************/
 .normal-gradient1 {
@@ -580,7 +577,7 @@ font-size: 1.3em;
   border-color: rgba(230, 0, 219, 0.61);
 }
 .psychic-color1 {
-  color: rgb(230, 0, 219) ;
+  color: rgb(230, 0, 219);
 }
 .ice-gradient1 {
   background: linear-gradient(
@@ -594,7 +591,7 @@ font-size: 1.3em;
   border-color: rgb(147, 210, 241);
 }
 .ice-color1 {
-  color: rgb(147, 210, 241) ;
+  color: rgb(147, 210, 241);
 }
 .dragon-gradient1 {
   background: linear-gradient(
@@ -605,10 +602,10 @@ font-size: 1.3em;
   );
 }
 .dragon-border1 {
-  border-color: hsla(304, 96%, 22%, 1) ;
+  border-color: hsla(304, 96%, 22%, 1);
 }
 .dragon-color1 {
-  color: hsla(304, 96%, 22%, 1) ;
+  color: hsla(304, 96%, 22%, 1);
 }
 .dark-gradient1 {
   background: linear-gradient(

@@ -1,281 +1,341 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 .pokecard {
-    max-width: 350px;
-    border-radius: 0.7em;
-    border: 0.7em solid #ccc;
-    cursor: pointer;
-    transition: transform 150ms ease;
+  max-width: 350px;
+  border-radius: 0.7em;
+  border: 0.7em solid #ccc;
+  cursor: pointer;
+  transition: transform 150ms ease;
 }
 @media screen and (min-width: 750px) {
-    .pokecard {
-      flex-basis: calc(33.33% - 20px); /* 3 tarjetas por fila */
-    }
+  .pokecard {
+    flex-basis: calc(33.33% - 20px); /* 3 tarjetas por fila */
   }
-  
-  @media screen and (max-width: 749px) {
-    .pokecard {
-      flex-basis: calc(50% - 20px); /* 2 tarjetas por fila */
-    }
+}
+
+@media screen and (max-width: 749px) {
+  .pokecard {
+    flex-basis: calc(50% - 20px); /* 2 tarjetas por fila */
   }
-  
-  @media screen and (max-width: 550px) {
-    .pokecard {
-      flex-basis: calc(100% - 20px); /* 1 tarjeta por fila */
-    }
+}
+
+@media screen and (max-width: 550px) {
+  .pokecard {
+    flex-basis: calc(100% - 20px); /* 1 tarjeta por fila */
   }
+}
 .pokecard:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 .pokecard__header {
-    background-color: #999;
-    aspect-ratio: 2;
-    position: relative;
+  background-color: #999;
+  aspect-ratio: 2;
+  position: relative;
 }
 .pokecard__image {
-    position: absolute;
-    width: 60%;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 1.5em;
+  position: absolute;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1.5em;
 }
 .pokecard__body {
-    padding: 3.5em 1em 2em;
+  padding: 3.5em 1em 2em;
 }
 .pokecard__name {
-    text-align: center;
-    text-transform: capitalize;
-    font-size: 1.8rem;
-    font-weight: 400;
-    margin-bottom: 0.2em;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 0.2em;
 }
 .pokecard__types {
-    display: flex;
-    justify-content: center;
-    gap: 0.7em;
-    margin-bottom: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 0.7em;
+  margin-bottom: 1em;
 }
 .pokecard__typename {
-    text-transform: capitalize;
+  text-transform: capitalize;
 }
 .pokecard__typename:nth-child(2)::before {
-    content: '/';
-    padding-right: 0.7em;
+  content: "/";
+  padding-right: 0.7em;
 }
 .pokecard__hr {
-    margin-bottom: 1em;
-    border: 1px solid #ccc4;
-}   
+  margin-bottom: 1em;
+  border: 1px solid #ccc4;
+}
 .pokecard__stats {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap: 1.5em 0.2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 1.5em 0.2em;
 }
 .pokecard__stat {
-    display: grid;
-    gap: 0.5em;
-    justify-items: center;
+  display: grid;
+  gap: 0.5em;
+  justify-items: center;
 }
 .pokecard__stat__name {
-    font-size: 0.7em;
-    font-weight: 300;
-    text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 .pokecard__stat__value {
-    font-weight: 500;
-    font-size: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
 }
 .normal-gradient {
-    background: linear-gradient(180deg, hsla(0, 0%, 86%, 1) 10%, hsla(0, 0%, 52%, 1) 52%, hsla(0, 0%, 35%, 1) 100%);
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 86%, 1) 10%,
+    hsla(0, 0%, 52%, 1) 52%,
+    hsla(0, 0%, 35%, 1) 100%
+  );
 }
 .normal-border {
-    border-color: #7e7e7e
+  border-color: #7e7e7e;
 }
 .normal-color {
-    color: #8a8989;
+  color: #8a8989;
 }
 .fighting-gradient {
-    background: linear-gradient(360deg, rgba(161, 72, 34, 0.788) 0%, rgb(155, 53, 16) 52%, rgb(124, 28, 1) 100%);
+  background: linear-gradient(
+    360deg,
+    rgba(161, 72, 34, 0.788) 0%,
+    rgb(155, 53, 16) 52%,
+    rgb(124, 28, 1) 100%
+  );
 }
 .fighting-border {
-    border-color: rgba(161, 72, 34, 0.788);
+  border-color: rgba(161, 72, 34, 0.788);
 }
 .fighting-color {
-    color: rgb(124, 28, 1);
+  color: rgb(124, 28, 1);
 }
 .flying-gradient {
-    background: linear-gradient(360deg, rgb(6, 78, 117) 0%, rgb(95, 106, 161) 52%, hsla(200, 26%, 61%, 1) 100%);
+  background: linear-gradient(
+    360deg,
+    rgb(6, 78, 117) 0%,
+    rgb(95, 106, 161) 52%,
+    hsla(200, 26%, 61%, 1) 100%
+  );
 }
 .flying-border {
-    border-color: rgb(6, 78, 117);
+  border-color: rgb(6, 78, 117);
 }
 .flying-color {
-    color: rgb(95, 106, 161);
+  color: rgb(95, 106, 161);
 }
 .poison-gradient {
-    background: linear-gradient(360deg, hsla(262, 100%, 16%, 1) 0%, hsla(268, 34%, 48%, 1) 52%, hsla(293, 26%, 61%, 1) 100%);
+  background: linear-gradient(
+    360deg,
+    hsla(262, 100%, 16%, 1) 0%,
+    hsla(268, 34%, 48%, 1) 52%,
+    hsla(293, 26%, 61%, 1) 100%
+  );
 }
 .poison-border {
-    border-color: rgba(85, 43, 158, 0.74);
+  border-color: rgba(85, 43, 158, 0.74);
 }
 .poison-color {
-    color: rgb(116, 29, 216);
+  color: rgb(116, 29, 216);
 }
 .ground-gradient {
-    background: linear-gradient(360deg, hsla(26, 100%, 16%, 1) 0%, hsla(24, 34%, 48%, 1) 52%, hsla(31, 26%, 61%, 1) 100%);
+  background: linear-gradient(
+    360deg,
+    hsla(26, 100%, 16%, 1) 0%,
+    hsla(24, 34%, 48%, 1) 52%,
+    hsla(31, 26%, 61%, 1) 100%
+  );
 }
 .ground-border {
-    border-color: rgba(82, 36, 0, 0.801);
+  border-color: rgba(82, 36, 0, 0.801);
 }
 .ground-color {
-    color: rgb(201, 118, 64);
+  color: rgb(201, 118, 64);
 }
 .rock-gradient {
-    background: linear-gradient(360deg, hsla(0, 0%, 16%, 1) 0%, hsla(0, 0%, 60%, 1) 52%, hsla(0, 0%, 97%, 1) 100%);
+  background: linear-gradient(
+    360deg,
+    hsla(0, 0%, 16%, 1) 0%,
+    hsla(0, 0%, 60%, 1) 52%,
+    hsla(0, 0%, 97%, 1) 100%
+  );
 }
-.rock-border{
-    border-color: rgba(41, 41, 41, 0.781);
+.rock-border {
+  border-color: rgba(41, 41, 41, 0.781);
 }
 .rock-color {
-    color: rgb(99, 99, 99);
+  color: rgb(99, 99, 99);
 }
 .bug-gradient {
-    background: linear-gradient(177.56deg, #62DB60 -58.92%, #3BB039 16.57%, #AAFFA8 209.53%);
+  background: linear-gradient(
+    177.56deg,
+    #62db60 -58.92%,
+    #3bb039 16.57%,
+    #aaffa8 209.53%
+  );
 }
 .bug-border {
-    border-color: #2a7e28ce;
+  border-color: #2a7e28ce;
 }
 .bug-color {
-    color: #3bc439c2;
+  color: #3bc439c2;
 }
 .ghost-gradient {
-    background: linear-gradient(360deg, rgba(79, 3, 171, 0.877) 0%, hsla(264, 58%, 54%, 1) 52%, rgb(78, 11, 78) 100%);
+  background: linear-gradient(
+    360deg,
+    rgba(79, 3, 171, 0.877) 0%,
+    hsla(264, 58%, 54%, 1) 52%,
+    rgb(78, 11, 78) 100%
+  );
 }
 .ghost-border {
-    border-color: rgba(79, 3, 171, 0.603);
+  border-color: rgba(79, 3, 171, 0.603);
 }
 .ghost-color {
-    color: rgb(78, 11, 78);
+  color: rgb(78, 11, 78);
 }
 .steel-gradient {
-    background: linear-gradient(360deg, rgb(59, 59, 59) 0%, rgb(175, 203, 211) 52%, rgb(78, 78, 78) 100%);
+  background: linear-gradient(
+    360deg,
+    rgb(59, 59, 59) 0%,
+    rgb(175, 203, 211) 52%,
+    rgb(78, 78, 78) 100%
+  );
 }
 .steel-border {
-    border-color: rgb(59, 59, 59);
+  border-color: rgb(59, 59, 59);
 }
 .steel-color {
-    color: rgb(78, 78, 78);
+  color: rgb(78, 78, 78);
 }
 .fire-gradient {
-    background: linear-gradient(176.37deg, #F96D6Fbb -32.26%, #E35825bb 22.55%, #E8AE1B 125.72%);
+  background: linear-gradient(
+    176.37deg,
+    #f96d6fbb -32.26%,
+    #e35825bb 22.55%,
+    #e8ae1b 125.72%
+  );
 }
 .fire-border {
-    border-color: #ef6431
+  border-color: #ef6431;
 }
 .fire-color {
-    color: #ef6431;
+  color: #ef6431;
 }
 .water-gradient {
-    background: linear-gradient(179.57deg, #133258 -70.14%, #1479FB 56.16%, #82B2F1 214.85%);
+  background: linear-gradient(
+    179.57deg,
+    #133258 -70.14%,
+    #1479fb 56.16%,
+    #82b2f1 214.85%
+  );
 }
 .water-border {
-    border-color: #2162b1d7;
+  border-color: #2162b1d7;
 }
 .water-color {
-    color: #1479FB;
+  color: #1479fb;
 }
 .grass-gradient {
-    background: linear-gradient(178.92deg, #7EC6C5bb 0.92%, #ABDAC6bb 47.96%, #CAE099 99.08%);
+  background: linear-gradient(
+    178.92deg,
+    #7ec6c5bb 0.92%,
+    #abdac6bb 47.96%,
+    #cae099 99.08%
+  );
 }
 .grass-border {
-    border-color: #7EC6C5;
+  border-color: #7ec6c5;
 }
 .grass-color {
-    color: #2db47ad3;
+  color: #2db47ad3;
 }
 .electric-gradient {
-    background: linear-gradient(360deg, rgba(250, 213, 3, 0.836) 0%, rgb(241, 182, 20) 52%, rgba(247, 192, 11, 0.788) 100%);
+  background: linear-gradient(
+    360deg,
+    rgba(250, 213, 3, 0.836) 0%,
+    rgb(241, 182, 20) 52%,
+    rgba(247, 192, 11, 0.788) 100%
+  );
 }
 .electric-border {
-    border-color: rgba(250, 213, 3, 0.603);
+  border-color: rgba(250, 213, 3, 0.603);
 }
 .electric-color {
-    color: rgb(184, 136, 6) ;
+  color: rgb(184, 136, 6);
 }
 .psychic-gradient {
-    background: linear-gradient(
-      360deg,
-      rgba(230, 0, 219, 0.836) 0%,
-      rgba(212, 189, 17, 0.692) 52%,
-      rgba(152, 41, 255, 0.788) 100%
-    );
-  }
-  .psychic-border {
-    border-color: rgba(230, 0, 219, 0.61);
-  }
-  .psychic-color {
-    color: rgb(230, 0, 219) ;
-  }
-  .ice-gradient {
-    background: linear-gradient(
-      360deg,
-      rgb(147, 210, 241) 0%,
-      rgb(255, 255, 255) 52%,
-      rgba(41, 255, 234, 0.856) 100%
-    );
-  }
-  .ice-border {
-    border-color: rgb(147, 210, 241);
-  }
-  .ice-color {
-    color: rgb(147, 210, 241) ;
-  }
-  .dragon-gradient {
-    background: linear-gradient(
-      360deg,
-      hsla(304, 96%, 22%, 1) 0%,
-      rgba(255, 255, 255, 0.897) 52%,
-      rgba(163, 25, 138, 0.829) 100%
-    );
-  }
-  .dragon-border {
-    border-color: hsla(304, 96%, 22%, 1) ;
-  }
-  .dragon-color {
-    color: hsla(304, 96%, 22%, 1) ;
-  }
-  .dark-gradient {
-    background: linear-gradient(
-      360deg,
-      rgba(0, 0, 0, 0.87) 0%,
-      hsla(240, 51%, 72%, 1) 52%,
-      rgba(5, 5, 5, 0.89) 100%
-    );
-  }
-  .dark-border {
-    border-color: rgba(0, 0, 0, 0.87);
-  }
-  .dark-color {
-    color: rgba(0, 0, 0, 0.87);
-  }
-  
-  .fairy-gradient {
-    background: linear-gradient(
-      360deg,
-      rgba(158, 0, 53, 0.842) 0%,
-      rgba(230, 10, 255, 0.829) 52%,
-      rgba(189, 0, 117, 0.781) 100%
-    );
-  }
-  .fairy-border {
-    border-color: rgba(158, 0, 53, 0.842);
-  }
-  .fairy-color {
-    color: rgba(158, 0, 53, 0.842);
-  }
+  background: linear-gradient(
+    360deg,
+    rgba(230, 0, 219, 0.836) 0%,
+    rgba(212, 189, 17, 0.692) 52%,
+    rgba(152, 41, 255, 0.788) 100%
+  );
+}
+.psychic-border {
+  border-color: rgba(230, 0, 219, 0.61);
+}
+.psychic-color {
+  color: rgb(230, 0, 219);
+}
+.ice-gradient {
+  background: linear-gradient(
+    360deg,
+    rgb(147, 210, 241) 0%,
+    rgb(255, 255, 255) 52%,
+    rgba(41, 255, 234, 0.856) 100%
+  );
+}
+.ice-border {
+  border-color: rgb(147, 210, 241);
+}
+.ice-color {
+  color: rgb(147, 210, 241);
+}
+.dragon-gradient {
+  background: linear-gradient(
+    360deg,
+    hsla(304, 96%, 22%, 1) 0%,
+    rgba(255, 255, 255, 0.897) 52%,
+    rgba(163, 25, 138, 0.829) 100%
+  );
+}
+.dragon-border {
+  border-color: hsla(304, 96%, 22%, 1);
+}
+.dragon-color {
+  color: hsla(304, 96%, 22%, 1);
+}
+.dark-gradient {
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.87) 0%,
+    hsla(240, 51%, 72%, 1) 52%,
+    rgba(5, 5, 5, 0.89) 100%
+  );
+}
+.dark-border {
+  border-color: rgba(0, 0, 0, 0.87);
+}
+.dark-color {
+  color: rgba(0, 0, 0, 0.87);
+}
 
-
-
-
-
+.fairy-gradient {
+  background: linear-gradient(
+    360deg,
+    rgba(158, 0, 53, 0.842) 0%,
+    rgba(230, 10, 255, 0.829) 52%,
+    rgba(189, 0, 117, 0.781) 100%
+  );
+}
+.fairy-border {
+  border-color: rgba(158, 0, 53, 0.842);
+}
+.fairy-color {
+  color: rgba(158, 0, 53, 0.842);
+}
