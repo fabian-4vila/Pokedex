@@ -58,7 +58,7 @@ const PokedexIdPages = () => {
         <div className={`Card-Pokemon-into ${firstType}-border1 ${firstType}-color1`}>
           <div className={`poke-card__header1 ${firstType}-gradient1 `}>
             <img
-              className="poke-card__official-artwork"
+              className="poke-card__official-artwork1"
               src={pokemon?.sprites.other["official-artwork"].front_default}
               alt=""
             />

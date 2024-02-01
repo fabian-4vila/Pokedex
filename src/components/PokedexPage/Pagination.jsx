@@ -28,7 +28,7 @@ const Pagination = ({ cardsPerPage, totalCards, paginate, currentPage }) => {
           disabled={currentPage === 1}
           className="pagination__button"
         >
-          <img className="arrow" src="/images/flecha-I.png" alt="icono" />
+          <img className="arrow" src="/images/arrowI.png" alt="icono" />
         </button>
       </li>
       {pageNumbers.slice(startPage - 1, endPage).map((number) => (
@@ -47,7 +47,7 @@ const Pagination = ({ cardsPerPage, totalCards, paginate, currentPage }) => {
           disabled={currentPage === Math.ceil(totalCards / cardsPerPage)}
           className="pagination__button"
         >
-          <img className="arrow" src="./images/flecha-D.png" alt="icono" />
+          <img className="arrow" src="./images/arrowD.png" alt="icono" />
         </button>
       </li>
     </ul>

@@ -149,7 +149,7 @@
 @media  screen and ( max-width: 500px)  {
     .pokedex{
         grid-template-columns: 1fr;
-        grid-template-rows: minmax(100px, 150px) repeat(2, 1fr);
+        grid-template-rows: minmax(100px, 150px) 1fr 300px;
     }
     .pokedex__body, .pokedex__title2,.pokedex__instructions{
         justify-content: center;
