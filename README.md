@@ -28,15 +28,42 @@
 
 - [React](https://reactjs.org/)
 - [PokeAPI](https://pokeapi.co/)
-- [CSS Modules / Tailwind / Styled Components (según cómo lo estés manejando)]
+- CSS
 - [Netlify](https://www.netlify.com/) para despliegue
 
 ---
 
 ## 🚀 Instalación local
 
-1. Clona el repositorio:
+Clona el repositorio:
 
 ```bash
 git clone https://github.com/fabian-4vila/entre5-gen29.git
 cd entre5-gen29
+```
+Instala las dependencias:
+
+```bash
+npm install
+```
+Ejecuta la aplicación:
+
+```bash
+npm start
+```
+La app se abrirá en http://localhost:3000.
+```bash
+📁 Estructura del proyecto (ejemplo)
+java
+Copiar
+Editar
+entre5-gen29/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── services/
+│   └── App.jsx
+├── package.json
+└── README.md
+```
