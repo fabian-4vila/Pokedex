@@ -52,8 +52,8 @@ Ejecuta la aplicación:
 npm start
 ```
 La app se abrirá en http://localhost:3000.
+## 📁 Estructura del proyecto 
 ```bash
-📁 Estructura del proyecto 
 entre5-gen29/
 ├── public/
 │   ├── images/
