@@ -53,17 +53,20 @@ npm start
 ```
 La app se abrirá en http://localhost:3000.
 ```bash
-📁 Estructura del proyecto (ejemplo)
-java
-Copiar
-Editar
+📁 Estructura del proyecto 
 entre5-gen29/
 ├── public/
+│   ├── images/
 ├── src/
 │   ├── components/
+│       ├── pokedexPage/
+│   ├── hooks/  
 │   ├── pages/
-│   ├── services/
+│   ├── store/
+│       ├── slices/
 │   └── App.jsx
+│   └── index.css
+│   └── main.jsx
 ├── package.json
 └── README.md
 ```
