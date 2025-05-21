@@ -6,7 +6,7 @@
 [https://pokemon-page-by-fabian-4avila.netlify.app](https://pokemon-page-by-fabian-4avila.netlify.app)
 
 📁 **Repositorio:**  
-[https://github.com/fabian-4vila/entre5-gen29.git](https://github.com/fabian-4vila/entre5-gen29.git)
+[https://github.com/fabian-4vila/Pokedex.git](https://github.com/fabian-4vila/Pokedex.git)
 
 ## ✨ Funcionalidades
 
@@ -32,8 +32,8 @@
 Clona el repositorio:
 
 ```bash
-git clone https://github.com/fabian-4vila/entre5-gen29.git
-cd entre5-gen29
+git clone https://github.com/fabian-4vila/Pokedex.git
+cd Pokedex
 ```
 Instala las dependencias:
 
@@ -49,7 +49,7 @@ La app se abrirá en http://localhost:3000.
 ## 📁 Estructura del proyecto 
 
 ```bash
-entre5-gen29/
+Pokedex/
 ├── public/
 │   ├── images/
 ├── src/
