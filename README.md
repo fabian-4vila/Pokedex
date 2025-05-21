@@ -1,6 +1,6 @@
 # Pokémon Page by Fabián Ávila
 
-¡Bienvenido/a a mi proyecto de una página de Pokémon! 🎮 Este sitio web permite explorar información sobre Pokémon de las generaciones 1 a 5 utilizando [PokeAPI](https://pokeapi.co/) y está construido con **React**.
+¡Bienvenido/a a mi proyecto de una página de Pokémon! 🎮 Este sitio web permite explorar información sobre Pokémon de todas las generaciones utilizando [PokeAPI](https://pokeapi.co/) y está construido con **React**.
 
 🌐 **Página en vivo:**  
 [https://pokemon-page-by-fabian-4avila.netlify.app](https://pokemon-page-by-fabian-4avila.netlify.app)
@@ -18,7 +18,7 @@
   - Tipo(s)
   - Habilidades
   - Estadísticas base
-- 🔁 Navegación por generaciones (1 a 5).
+- 🔁 Navegación por generaciones.
 - ⚡ Diseño responsivo y limpio.
 - 📦 Datos obtenidos dinámicamente desde la API pública [PokeAPI](https://pokeapi.co/).
 
