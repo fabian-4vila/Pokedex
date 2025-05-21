@@ -8,8 +8,6 @@
 📁 **Repositorio:**  
 [https://github.com/fabian-4vila/entre5-gen29.git](https://github.com/fabian-4vila/entre5-gen29.git)
 
----
-
 ## ✨ Funcionalidades
 
 - 🔍 Buscar Pokémon por nombre.
@@ -22,16 +20,12 @@
 - ⚡ Diseño responsivo y limpio.
 - 📦 Datos obtenidos dinámicamente desde la API pública [PokeAPI](https://pokeapi.co/).
 
----
-
 ## 🛠️ Tecnologías utilizadas
 
 - [React](https://reactjs.org/)
 - [PokeAPI](https://pokeapi.co/)
 - CSS
 - [Netlify](https://www.netlify.com/) para despliegue
-
----
 
 ## 🚀 Instalación local
 
@@ -53,6 +47,7 @@ npm start
 ```
 La app se abrirá en http://localhost:3000.
 ## 📁 Estructura del proyecto 
+
 ```bash
 entre5-gen29/
 ├── public/
