@@ -64,8 +64,8 @@ entre5-gen29/
 │   ├── pages/
 │   ├── store/
 │       ├── slices/
-│   └── App.jsx
-│   └── index.css
+│   ├── App.jsx
+│   ├── index.css
 │   └── main.jsx
 ├── package.json
 └── README.md
