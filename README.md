@@ -73,7 +73,8 @@ Pokedex/
 │   │   │   ├── Pagination.jsx
 │   │   │   ├── PokeCard.jsx
 │   │   │   └── SelectType.jsx
-│   ├── hooks/  
+│   ├── hooks/
+│   │   └── useFetch.js  
 │   ├── pages/
 │   ├── store/
 │   │   ├── slices/
