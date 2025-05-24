@@ -52,13 +52,38 @@ La app se abrirá en http://localhost:3000.
 Pokedex/
 ├── public/
 │   ├── images/
+│Ellipse1.png
+
+│Ellipse2.png
+
+│Fabian3.png
+
+│RectangleB.png
+
+│RectangleR.png
+
+│TitleHome.png
+
+│arrowD.png
+
+│arrowI.png
+
+│circulo1.png
+
+│circulo2.png
+
+│rectangulo.black.png
+
+│rectangulo.red.png
+
+│titleCard.png
 ├── src/
 │   ├── components/
-│       ├── pokedexPage/
+│   │   ├── pokedexPage/
 │   ├── hooks/  
 │   ├── pages/
 │   ├── store/
-│       ├── slices/
+│   │   ├── slices/
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
