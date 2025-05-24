@@ -76,6 +76,13 @@ Pokedex/
 │   ├── hooks/
 │   │   └── useFetch.js  
 │   ├── pages/
+HomePage.css
+HomePage.jsx
+PokedexIdPages.jsx
+PokedexPage.css
+PokedexPage.jsx
+ProtectedRoutes.jsx
+pokedexidPages.css
 │   ├── store/
 │   │   ├── slices/
 │   ├── App.jsx
