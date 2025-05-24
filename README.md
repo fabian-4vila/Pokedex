@@ -85,6 +85,8 @@ Pokedex/
 │   │   └── pokedexidPages.css
 │   ├── store/
 │   │   ├── slices/
+│   │   │   └── trainer.slice.js
+│   │   └── index.js    
 │   ├── App.jsx
 │   ├── index.css
 │   └── main.jsx
