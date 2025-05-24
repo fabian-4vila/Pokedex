@@ -68,6 +68,11 @@ Pokedex/
 ├── src/
 │   ├── components/
 │   │   ├── pokedexPage/
+│   │   │   ├── style/
+│   │   │   │   └── Pokecard.css    
+│   │   │   ├── Pagination.jsx
+│   │   │   ├── PokeCard.jsx
+│   │   │   └── SelectType.jsx
 │   ├── hooks/  
 │   ├── pages/
 │   ├── store/
